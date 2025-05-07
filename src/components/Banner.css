@@ -1,0 +1,76 @@
+.banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0 16px 0;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.banner-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.banner-logo {
+  color: #4f8cff;
+}
+
+.banner-news {
+  color: #222;
+  margin-left: 2px;
+}
+
+.banner-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.banner-link {
+  color: #444;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.banner-link:hover {
+  color: #4f8cff;
+}
+
+.banner-auth {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.banner-login,
+.banner-signup {
+  background: none;
+  border: none;
+  color: #4f8cff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 4px;
+}
+
+.banner-login:hover,
+.banner-signup:hover {
+  background: #eaf3ff;
+  color: #2563eb;
+}
+
+.banner-divider {
+  color: #bbb;
+  font-size: 1rem;
+  margin: 0 4px;
+} 
