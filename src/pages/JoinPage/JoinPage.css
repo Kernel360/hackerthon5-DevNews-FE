@@ -1,0 +1,125 @@
+.join-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafbfc;
+}
+
+.join-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: 48px 32px 40px 32px;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.join-desc {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.join-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.join-label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.join-input {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 2px solid #e5e7eb;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  margin-bottom: 8px;
+  transition: border 0.2s;
+}
+
+.join-input:focus {
+  border-bottom: 2px solid #4f8cff;
+}
+
+.join-divider {
+  border: none;
+  border-top: 1.5px solid #e5e7eb;
+  margin: 16px 0 8px 0;
+}
+
+.join-section-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 12px 0 8px 0;
+}
+
+.join-category-list,
+.join-company-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.join-category-btn,
+.join-company-btn {
+  background: #f5f6fa;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  color: #4f4f4f;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.join-category-btn.selected,
+.join-company-btn.selected {
+  background: #4f8cff;
+  color: #fff;
+}
+
+.join-category-btn:hover,
+.join-company-btn:hover {
+  background: #eaf3ff;
+  color: #2563eb;
+}
+
+.join-submit-btn {
+  width: 100%;
+  margin-top: 24px;
+  background: #eaf3ff;
+  color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.join-submit-btn:hover {
+  background: #4f8cff;
+  color: #fff;
+} 
