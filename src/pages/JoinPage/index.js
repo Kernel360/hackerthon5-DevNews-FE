@@ -60,7 +60,7 @@ const JoinPage = ({ onJoinResult, joinError }) => {
         <div className="join-desc">가입을 통해 다양한 IT 소식을 받아보세요!</div>
         <form className="join-form" onSubmit={handleSubmit}>
           <label className="join-label">이름</label>
-          <input className="join-input" type="text" placeholder="홍길동" value={username} onChange={e => setUsername(e.target.value)} />
+          <input className="join-input" type="text" placeholder="이름" value={username} onChange={e => setUsername(e.target.value)} />
 
           <label className="join-label">이메일</label>
           <input className="join-input" type="email" placeholder="abc000@gmail.com" value={email} onChange={e => setEmail(e.target.value)} />

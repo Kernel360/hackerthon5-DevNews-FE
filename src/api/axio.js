@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:8080",
+    baseURL: "http://3.35.9.122:8080",
 });
 
 // 모든 요청에 JWT 토큰을 자동으로 추가

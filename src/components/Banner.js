@@ -6,7 +6,14 @@ import { UserContext } from '../App';
 
 const Banner = () => {
   const navigate = useNavigate();
-  const { user } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    setUser(null);
+    navigate('/');
+  };
 
   return (
     <div className="banner">
@@ -19,7 +26,10 @@ const Banner = () => {
       </div>
       <div className="banner-auth">
         {user && user.username ? (
-          <span className="banner-hello">{user.username} 님 안녕하세요.</span>
+          <>
+            <span className="banner-hello">{user.username} 님 안녕하세요.</span>
+            <button className="banner-login" style={{ marginLeft: 16 }} onClick={handleLogout}>로그아웃</button>
+          </>
         ) : (
           <>
             <button className="banner-login" onClick={() => navigate('/login')}>로그인</button>
